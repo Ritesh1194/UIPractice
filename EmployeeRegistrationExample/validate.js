@@ -3,49 +3,49 @@ function validate()
 { 
    if( document.EmployeeRegistration.employeename.value == "" )
    {
-     alert( "Please provide your Name!" );
+     alert( "Enter Employee Name!" );
      document.EmployeeRegistration.employeename.focus() ;
      return false;
    }
    
    if( document.EmployeeRegistration.paddress.value == "" )
    {
-     alert( "Please provide your Postal Address!" );
+     alert( "Enter Employee Postal Address!" );
      document.EmployeeRegistration.paddress.focus() ;
      return false;
    }
    if( document.EmployeeRegistration.personaladdress.value == "" )
    {
-     alert( "Please provide your Personal Address!" );
+     alert( "Enter Employee Personal Address!" );
      document.EmployeeRegistration.personaladdress.focus() ;
      return false;
    }
    if ( ( EmployeeRegistration.sex[0].checked == false ) && ( EmployeeRegistration.sex[1].checked == false ) )
    {
-   alert ( "Please choose your Gender: Male or Female" );
+   alert ( "Enter Employee Gender: Male or Female" );
    return false;
    }   
    if( document.EmployeeRegistration.City.value == "-1" )
    {
-     alert( "Please provide your City!" );
+     alert( "Enter Employee City!" );
      document.EmployeeRegistration.City.focus() ;
      return false;
    }   
    if( document.EmployeeRegistration.Course.value == "-1" )
    {
-     alert( "Please provide your Course!" );
+     alert( "Enter Employee Course!" );
     
      return false;
    }   
    if( document.EmployeeRegistration.District.value == "-1" )
    {
-     alert( "Please provide your Select District!" );
+     alert( "Enter Employee Select District!" );
     
      return false;
    }   
    if( document.EmployeeRegistration.State.value == "-1" )
    {
-     alert( "Please provide your Select State!" );
+     alert( "Enter Employee Select State!" );
      
      return false;
    }
@@ -53,7 +53,7 @@ function validate()
            isNaN( document.EmployeeRegistration.pincode.value) ||
            document.EmployeeRegistration.pincode.value.length != 6 )
    {
-     alert( "Please provide a pincode in the format ######." );
+     alert( "Enter Employee a pincode in the format ######." );
      document.EmployeeRegistration.pincode.focus() ;
      return false;
    }
@@ -62,13 +62,13 @@ function validate()
   dotpos = email.lastIndexOf(".");
  if (email == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
  {
-     alert("Please enter correct email ID")
+     alert("Enter Employee correct email ID")
      document.EmployeeRegistration.emailid.focus() ;
      return false;
  }
   if( document.EmployeeRegistration.dob.value == "" )
    {
-     alert( "Please provide your DOB!" );
+     alert( "Enter Employee DOB!" );
      document.EmployeeRegistration.dob.focus() ;
      return false;
    }
@@ -76,7 +76,7 @@ function validate()
            isNaN( document.EmployeeRegistration.mobileno.value) ||
            document.EmployeeRegistration.mobileno.value.length != 10 )
    {
-     alert( "Please provide a Mobile No in the format 123." );
+     alert( "Enter Employee a Mobile No in the format 123." );
      document.EmployeeRegistration.mobileno.focus() ;
      return false;
    }
